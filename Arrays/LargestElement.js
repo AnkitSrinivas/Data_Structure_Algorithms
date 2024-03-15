@@ -1,5 +1,6 @@
 const myArr=[21,6,85,86,12]
 
+// optimal approach with time complexity O[n]
 function largestIndex(arr){
     let largest=0
     for(let i=1;i<arr.length;i++){
@@ -11,7 +12,7 @@ function largestIndex(arr){
 
 }
 
-
+//naive approach with time complexity O(n^2)
 function naiveApproach(arr){
     let largest=0
     for(let i=0;i<arr.length;i++){
