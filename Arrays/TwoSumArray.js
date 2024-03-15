@@ -1,5 +1,5 @@
 const myArr=[2,7,11,15]
-const target=26
+const target=9
 
 //naive approach with time complexity O(n^2)
 const twoSum=(arr,target)=>{
@@ -38,11 +38,11 @@ const twoSumArray = function(arr,target){
     while(low<high){
         if(arr[low]+arr[high]==target){
             return [low,high]
-        }else if((arr[low]+arr[high])>arr[low]){
-            low++
+        }else if((arr[low]+arr[high])>target){
+            high--
         }
         else{
-            high--
+            low++
         }
     }
 
